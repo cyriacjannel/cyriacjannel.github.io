@@ -1,0 +1,84 @@
+/*------------------------------------*\
+		$SELECT
+\*------------------------------------*/
+
+html {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+::selection {
+	background: transparent;
+	color: inherit;
+}
+
+::-moz-selection {
+	background: transparent;
+	color: inherit;
+}
+
+
+
+
+
+/*------------------------------------*\
+		$CONTAINER
+\*------------------------------------*/
+
+body {
+	height: 100%;
+	margin: 0 auto;
+	background-color: #F69F38;
+}
+
+.outer {
+	margin: 0 auto;
+	margin-top: 50vh;
+	transform: translateY(-50%);
+	width: 350px;
+	height: 350px;
+	overflow: hidden;
+}
+
+.container {
+	display: inline-block;
+	position: relative;
+}
+
+.container img {
+	position: absolute;
+}
+
+
+
+
+
+/*------------------------------------*\
+		$CHARACTER
+\*------------------------------------*/
+
+.body {
+	opacity: 0;
+	left: -25px;
+	height: 360px;
+}
+
+.head1, .head2 {
+	opacity: 0;
+	height: 320px;
+}
+
+.left-arm1, .left-arm2, .left-arm3 {
+	opacity: 0;
+	left: -550px;
+	height: 350px;
+}
+
+.right-arm1, .right-arm2, .right-arm3 {
+	opacity: 0;
+	right: -900px;
+	height: 350px;
+}

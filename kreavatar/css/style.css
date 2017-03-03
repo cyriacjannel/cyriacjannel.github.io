@@ -1,0 +1,60 @@
+/*------------------------------------*\
+		$IMPORT
+\*------------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+
+
+
+/*------------------------------------*\
+		$BODY
+\*------------------------------------*/
+
+html {
+	-moz-user-select: -moz-none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+::selection {
+	background: transparent;
+	color: inherit;
+}
+::-moz-selection {
+	background: transparent;
+	color: inherit;
+}
+
+body {
+	margin: 0 auto;
+	padding: 10px;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	background-color: #1d1f20;
+}
+
+h1 {
+	letter-spacing: 15px;
+	font-size: 28px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	color: #cccccc;
+}
+
+h2 {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #cccccc;
+}
+
+p {
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #cccccc;
+}
