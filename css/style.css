@@ -76,27 +76,6 @@ html {
 			$ANIMATION
 	\*------------------------------------*/
 
-	@-webkit-keyframes texture {
-		0% {}
-		100% {background-position: 0 152px;}
-	}
-	@-moz-keyframes texture {
-		0% {}
-		100% {background-position: 0 152px;}
-	}
-	@-ms-keyframes texture {
-		0% {}
-		100% {background-position: 0 152px;}
-	}
-	@-o-keyframes texture {
-		0% {}
-		100% {background-position: 0 152px;}
-	}
-	@keyframes texture {
-		0% {}
-		100% {background-position: 0 152px;}
-	}
-
 	@-webkit-keyframes opacity {
 		0% {opacity: 0;}
 		100% {}
@@ -119,45 +98,45 @@ html {
 	}
 
 	@-webkit-keyframes pop {
-		0% {opacity: 0;}
+		0% {opacity: 0; transform: translateY(8px);}
 		100% {}
 	}
 	@-moz-keyframes pop {
-		0% {opacity: 0; transform: translateY(6px)}
+		0% {opacity: 0; transform: translateY(8px);}
 		100% {}
 	}
 	@-ms-keyframes pop {
-		0% {opacity: 0; transform: translateY(6px)}
+		0% {opacity: 0; transform: translateY(8px);}
 		100% {}
 	}
 	@-o-keyframes pop {
-		0% {opacity: 0; transform: translateY(6px)}
+		0% {opacity: 0; transform: translateY(8px);}
 		100% {}
 	}
 	@keyframes pop {
-		0% {opacity: 0; transform: translateY(6px)}
+		0% {opacity: 0; transform: translateY(8px);}
 		100% {}
 	}
 
 	@-webkit-keyframes scroll {
 		0% {}
-		100% {top: 60px;}
+		100% {transform: translateY(20px);}
 	}
 	@-moz-keyframes scroll {
 		0% {}
-		100% {top: 60px;}
+		100% {transform: translateY(20px);}
 	}
 	@-ms-keyframes scroll {
 		0% {}
-		100% {top: 60px;}
+		100% {transform: translateY(20px);}
 	}
 	@-o-keyframes scroll {
 		0% {}
-		100% {top: 60px;}
+		100% {transform: translateY(20px);}
 	}
 	@keyframes scroll {
 		0% {}
-		100% {top: 60px;}
+		100% {transform: translateY(20px);}
 	}
 
 
@@ -167,9 +146,9 @@ html {
 
 	body {
 		font-family: 'Fira Sans', sans-serif;
-		font-size: 	14px;
+		font-size:	16px;
 		font-weight: 400;
-		line-height: 1.28;
+		line-height: 1.5;
 		color: #737f8d;
 	}
 
@@ -181,7 +160,7 @@ html {
 	}
 
 	h3 {
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 500;
 	}
 
@@ -285,7 +264,7 @@ html {
 		-o-transition: 0.3s ease-out;
 		transition: 0.3s ease-out;
 		background-color: #1e2124;
-		color: white;
+		color: #ffffff;
 	}
 
 	.main-header_wrap {
@@ -331,7 +310,7 @@ html {
 	.main-header_nav-hey, .main-header_nav-about, .main-header_nav-works, .main-header_nav-contact {
 		display: block;
 		padding: 12px 10px;
-		font-size: 14px;
+		font-size: 18px;
 		font-weight: 400;
 		opacity: 0.35;
 		color: #ffffff;
@@ -361,7 +340,7 @@ html {
 	.main-header_wrap.active .main-header_wrap_bottom {
 		transform: rotate(45deg) translate(-3px,3px);
 	}
-	
+
 	.main-header_nav.active {
 		opacity: 1;
 		top: 36px;
@@ -393,7 +372,7 @@ html {
 		height: 100%; 
 		vertical-align: middle;
 		margin-right: -0.25em;
-}
+	}
 
 	.hey_container {
 		display: inline-block;
@@ -459,7 +438,7 @@ html {
 	}
 
 	.about_container {
-		padding: 80px 5% 100px 5%;
+		padding: 80px 8% 60px 8%;
 		border-top: 1px solid #b4b4b4;
 		background-color: #f8f8f8;
 	}
@@ -495,7 +474,7 @@ html {
 	}
 
 	.works_container {
-		padding: 100px 5% 80px 5%;
+		padding: 60px 8% 40px 8%;
 		border-top: 1px solid #f2f2f2;
 		border-bottom: 1px solid #b4b4b4;
 		background-color: #f4f4f4;
@@ -515,7 +494,7 @@ html {
 	}
 
 	.works_container_gallery li {
-		margin: 0 0 5% 0;
+		margin: 0 0 8% 0;
 		width: 100%;
 		border-radius: 6px;
 		background-color: #ffffff;
@@ -534,10 +513,6 @@ html {
 
 	.works_container_gallery li:hover img {
 		opacity: 0.95;
-	}
-
-	.works_container_gallery li:last-child {
-		margin-bottom: 0;
 	}
 
 	.works_container_gallery img {
@@ -573,7 +548,7 @@ html {
 	}
 
 	.contact_container {
-		padding: 80px 5% 100px 5%;
+		padding: 60px 8% 100px 8%;
 		background-image: url(../img/cover.jpg);
 		background-position: center 98%;
 		background-size: cover;
@@ -637,7 +612,7 @@ html {
 		$TABLET AND DESKTOP
 \*------------------------------------*/
 
-	@media all and (min-width: 500px) {
+@media all and (min-width: 500px) {
 
 
 	.main-header {
@@ -664,7 +639,9 @@ html {
 	.main-header_nav-hey, .main-header_nav-about, .main-header_nav-works, .main-header_nav-contact {
 		display: block;
 		padding: 12px 10px;
-		font-size: 18px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #ffffff;
 	}
 
 	.main-header_nav.scroll {
@@ -672,12 +649,13 @@ html {
 		background-color: #2e3136;
 	}
 
-	.main-header_nav-hey, .main-header_nav-about, .main-header_nav-works, .main-header_nav-contact {
-		display: block;
-		padding: 12px 10px;
-		font-size: 15px;
-		font-weight: 500;
-		color: #ffffff;
+
+	/*------------------------------------*\
+			$ABOUT
+	\*------------------------------------*/
+
+	.about_container {
+		padding: 100px 20% 80px 20%;
 	}
 
 
@@ -687,6 +665,7 @@ html {
 
 	.works_container {
 		overflow: auto;
+		padding: 80px 10% 80px 10%;
 	}
 
 	.works_container_text {
@@ -704,6 +683,15 @@ html {
 	.contact_container_stamp {
 		display: block;
 	}
+
+
+	/*------------------------------------*\
+			$CONTACT
+	\*------------------------------------*/
+
+	.contact_container {
+		padding: 100px 10% 120px 10%;
+	}
 }
 
 
@@ -720,38 +708,12 @@ html {
 			$FONT
 	\*------------------------------------*/
 
-	body {
-		font-size: 15px;
-		line-height: 1.38;
-	}
-
 	h2 {
 		font-size: 34px;
 	}
 
-	h3 {
-		font-size: 17px;
-	}
-
 	.hey_container h4 {
 		font-size: 92px;
-	}
-
-	.table-cell span {
-		font-size: 16px;
-	}
-
-	.works_container_gallery p {
-		font-size: 14px;
-	}
-
-
-	/*------------------------------------*\
-			$ABOUT
-	\*------------------------------------*/
-
-	.about_container {
-		padding: 120px 20% 100px 20%;
 	}
 
 
@@ -759,26 +721,14 @@ html {
 			$WORKS
 	\*------------------------------------*/
 
-	.works_container {
-		padding: 110px 8% 90px 8%;
-	}
-
 	.works_container_gallery li {
-		width: 48.8%;
-		margin-right: 2.4%;
-		margin-bottom: 2.4%;
+		width: 46.8%;
+		margin-right: 3.4%;
+		margin-bottom: 3.4%;
 	}
 
 	.works_container_gallery li:nth-child(2n) {
 		margin-right: 0;
-	}
-
-	/*------------------------------------*\
-			$CONTACT
-	\*------------------------------------*/
-
-	.contact_container {
-		padding: 110px 8% 120px 8%;
 	}
 }
 
@@ -796,39 +746,18 @@ html {
 			$FONT
 	\*------------------------------------*/
 
-	body {
-		font-size: 16px;
-		line-height: 1.48;
-	}
-
 	h2 {
 		font-size: 36px;
-	}
-
-	h3 {
-		font-size: 18px;
 	}
 
 	.hey_container h4 {
 		font-size: 110px;
 	}
 
-	.table-cell span {
-		font-size: 18px;
-	}
-
-	.works_container_gallery p {
-		font-size: 15px;
-	}
-
 
 	/*------------------------------------*\
 			$ABOUT
 	\*------------------------------------*/
-
-	.about_container {
-		padding: 120px 15% 100px 15%;
-	}
 
 	.about_container_img {
 		display:inline-block;
@@ -848,10 +777,6 @@ html {
 			$WORKS
 	\*------------------------------------*/
 
-	.works_container {
-		padding: 120px 10% 100px 10%;
-	}
-
 	.works_container_gallery ul {
 		width: 100%
 	}
@@ -864,14 +789,5 @@ html {
 
 	.works_container_gallery li:nth-child(3n) {
 		margin-right: 0;
-	}
-
-
-	/*------------------------------------*\
-			$CONTACT
-	\*------------------------------------*/
-
-	.contact_container {
-		padding: 120px 15% 110px 15%;
 	}
 }
