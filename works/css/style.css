@@ -82,6 +82,7 @@ html {
 		font-weight: 400;
 		line-height: 1.5;
 		color: #737f8d;
+		-webkit-font-smoothing: subpixel-antialiased;
 	}
 
 	h2 {
@@ -287,7 +288,7 @@ html {
 	}
 
 	.description_text_2 {
-		margin: 10px 0 0 0;
+		margin: 20px 0 0 0;
 	}
 
 	.description_img-2 img, .description_img-4 img {
@@ -342,7 +343,7 @@ html {
 	.main-header_nav-hey, .main-header_nav-about, .main-header_nav-works, .main-header_nav-contact {
 		display: block;
 		padding: 12px 10px;
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: 500;
 		color: #ffffff;
 	}

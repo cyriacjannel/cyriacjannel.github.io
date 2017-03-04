@@ -150,6 +150,7 @@ html {
 		font-weight: 400;
 		line-height: 1.5;
 		color: #737f8d;
+		-webkit-font-smoothing: subpixel-antialiased;
 	}
 
 	h2 {
@@ -474,7 +475,7 @@ html {
 	}
 
 	.works_container {
-		padding: 60px 8% 40px 8%;
+		padding: 60px 8% 50px 8%;
 		border-top: 1px solid #f2f2f2;
 		border-bottom: 1px solid #b4b4b4;
 		background-color: #f4f4f4;
@@ -548,7 +549,7 @@ html {
 	}
 
 	.contact_container {
-		padding: 60px 8% 100px 8%;
+		padding: 80px 8% 80px 8%;
 		background-image: url(../img/cover.jpg);
 		background-position: center 98%;
 		background-size: cover;
@@ -639,7 +640,7 @@ html {
 	.main-header_nav-hey, .main-header_nav-about, .main-header_nav-works, .main-header_nav-contact {
 		display: block;
 		padding: 12px 10px;
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: 500;
 		color: #ffffff;
 	}
@@ -655,7 +656,7 @@ html {
 	\*------------------------------------*/
 
 	.about_container {
-		padding: 100px 20% 80px 20%;
+		padding: 100px 20% 100px 20%;
 	}
 
 
@@ -665,7 +666,7 @@ html {
 
 	.works_container {
 		overflow: auto;
-		padding: 80px 10% 80px 10%;
+		padding: 100px 10% 90px 10%;
 	}
 
 	.works_container_text {
@@ -690,7 +691,7 @@ html {
 	\*------------------------------------*/
 
 	.contact_container {
-		padding: 100px 10% 120px 10%;
+		padding: 120px 10% 120px 10%;
 	}
 }
 
@@ -722,7 +723,7 @@ html {
 	\*------------------------------------*/
 
 	.works_container_gallery li {
-		width: 46.8%;
+		width: 48.3%;
 		margin-right: 3.4%;
 		margin-bottom: 3.4%;
 	}
@@ -763,13 +764,13 @@ html {
 		display:inline-block;
 		vertical-align:middle;
 		margin: 0 9% 0 0;
-		width:40%;
+		width: 40%;
 	}
 
 	.about_container_text {
 		display:inline-block;
 		vertical-align:middle;
-		width:50%;
+		width: 50%;
 	}
 
 
