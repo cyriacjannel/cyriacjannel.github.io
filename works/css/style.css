@@ -132,6 +132,10 @@ html {
 		opacity: 0.9;
 	}
 
+	.radius {
+		border-radius: 6px;
+	}
+
 
 	/*------------------------------------*\
 			$HEADER
@@ -291,9 +295,28 @@ html {
 		margin: 20px 0 0 0;
 	}
 
-	.description_img-2 img, .description_img-4 img {
+	.description_img-2 > img, .description_img-4 > img {
 		margin: 0 0 5% 0;
 		width: 100%;
+	}
+
+	.video-container {
+		position: relative;
+		margin: 0 0 5% 0;
+	}
+
+	.video-container img {
+		display: block;
+		width: 100%;
+	}
+
+	.video {
+		position: absolute;
+		margin-top: 28%;
+		margin-left: 14.78%;
+		width: 69.8%;
+		-webkit-backface-visibility: hidden;
+		filter: blur(0);
 	}
 
 
@@ -362,13 +385,13 @@ html {
 		height: 300px;
 	}
 
-	.description_img-4 img {
+	.description_img-4 > img, .description_img-4 > .video-container {
 		float: left;
 		margin: 0 3% 3% 0;
 		width: 48.5%;
 	}
 
-	.description_img-4 img:nth-child(2n) {
+	.description_img-4 > img:nth-child(2n), .description_img-4 div:nth-child(2n) {
 		margin-right: 0;
 	}
 }
