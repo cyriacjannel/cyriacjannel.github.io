@@ -5,7 +5,52 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
+/*------------------------------------*\
+		$RESET
+\*------------------------------------*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
 
 /*------------------------------------*\
@@ -28,16 +73,71 @@ html {
 	color: inherit;
 }
 
+html, body {
+	height: 100%;
+}
+
 body {
-	margin: 0 auto;
-	padding: 10px;
-	height: 100vh;
-	width: 100%;
-	overflow: hidden;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #1d1f20;
 }
 
+
+/*------------------------------------*\
+		$LEGEND
+\*------------------------------------*/
+
+#sketch-holder {
+	float: left;
+}
+
+#legend-holder {
+	float: left;
+	display: inline-block;
+	margin: 20px 0 0 40px;
+	width: 330px;
+}
+
+#title-holder {
+	float: left;
+	display: inline-block;
+	margin: 0 0 60px 0;
+	width: 330px;
+	text-align: center;
+}
+
+#left-holder {
+	float: left;
+	display: inline-block;
+	margin: 0 50px 0 0;
+	width: 140px;
+}
+
+#leftup-holder {
+	margin: 0 0 64px 0;
+}
+
+#right-holder {
+	float: left;
+	display: inline-block;
+	width: 140px;
+}
+
+#rightup-holder {
+	margin: 0 0 60px 0;
+}
+
+
+/*------------------------------------*\
+		$TEXT
+\*------------------------------------*/
+
 h1 {
+	display: inline-block;
+	margin: 0 0 16px 0;
 	letter-spacing: 15px;
 	font-size: 28px;
 	font-family: 'Montserrat', sans-serif;
@@ -46,15 +146,29 @@ h1 {
 }
 
 h2 {
+	display: inline-block;
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	color: #cccccc;
 }
 
-p {
+h3 {
+	margin: 0 0 24px 0;
 	font-size: 14px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	color: #cccccc;
+}
+
+p {
+	margin: 0 0 6px 0;
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: #cccccc;
+}
+
+input {
+	margin: 0 0 12px 0;
 }

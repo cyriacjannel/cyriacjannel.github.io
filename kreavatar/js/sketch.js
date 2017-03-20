@@ -1,6 +1,4 @@
-  //MISE EN PAGE OPTIMISÉ POUR GOOGLE CHROME
 //Cyriac JANNEL (15-01-2016)
-//Musique: A$AP Rocky - Pesos
 
 
 
@@ -10,101 +8,102 @@ var f = 0
 
 function setup() {
   //GÉNÉRALITÉS
-  createCanvas(600, 600);
+  var canvas = createCanvas(600, 600);
   frameRate(5);
+  canvas.parent('sketch-holder');
   title=createElement('h1','KRÉAVATAR');
-  title.position(648, 0);
+  title.parent('title-holder');
   title=createElement('h2','Générateur de pseudo et d’avatar');
-  title.position(660, 50);
+  title.parent('title-holder');
 
 
 
   //COULEUR DES FORMES
-  s=createP('CERCLES');
-  s.position(645, 140);
+  title=createElement('h3','CERCLES');
+  title.parent('leftup-holder');
   s=createP('rouge');
-  s.position(645, 170);
+  s.parent('leftup-holder');
   rShape = createSlider(0, 255, 10);
-  rShape.position(640, 200);
+  rShape.parent('leftup-holder');
   s=createP('vert');
-  s.position(645, 215)
+  s.parent('leftup-holder');
   gShape = createSlider(0, 255, 50);
-  gShape.position(640, 245);
+  gShape.parent('leftup-holder');
   s=createP('bleu');
-  s.position(645, 260)
+  s.parent('leftup-holder');
   bShape = createSlider(0, 255, 140);
-  bShape.position(640, 290);
+  bShape.parent('leftup-holder');
   s=createP('opacité');
-  s.position(645, 305)
+  s.parent('leftup-holder');
   oShape = createSlider(5, 255, 20);
-  oShape.position(640, 335);
+  oShape.parent('leftup-holder');
 
   //TYPE DE FORMES
   s=createP('type');
-  s.position(645, 350)
+  s.parent('leftup-holder');
   typeshape = createSlider(0, 1, 0);
-  typeshape.position(640, 380);
+  typeshape.parent('leftup-holder');
   s=createP('quantité');
-  s.position(645, 395)
+  s.parent('leftup-holder');
   nShape = createSlider(0, 1000, 750);
-  nShape.position(640, 425);
+  nShape.parent('leftup-holder');
   s=createP('taille');
-  s.position(645, 440)
+  s.parent('leftup-holder');
   sShape = createSlider(0, 80, 70);
-  sShape.position(640, 470);
+  sShape.parent('leftup-holder');
 
 
 
   //TEXTE
-  t=createP('TEXTE');
-  t.position(825, 140);
+  title=createElement('h3','TEXTE');
+  title.parent('rightup-holder');
   t=createP('gris');
-  t.position(825, 170);
+  t.parent('rightup-holder');
   wText = createSlider(0, 255, 250);
-  wText.position(820, 200);
+  wText.parent('rightup-holder');
   trb=createP('opacité');
-  trb.position(825, 215);
+  trb.parent('rightup-holder');
   oText = createSlider(5, 255, 255);
-  oText.position(820, 245);
+  oText.parent('rightup-holder');
   t=createP('police');
-  t.position(825, 260);
+  t.parent('rightup-holder');
   fText = createSlider(0, 1, 0);
-  fText.position(820, 290);
+  fText.parent('rightup-holder');
   t=createP('taille');
-  t.position(825, 305);
+  t.parent('rightup-holder');
   sText = createSlider(60, 110, 80);
-  sText.position(820, 335);
+  sText.parent('rightup-holder');
 
 
 
   //ARRIÈRE-PLAN
-  b=createP('ARRIÈRE-PLAN');
-  b.position(825, 405);
+  title=createElement('h3','ARRIÈRE-PLAN');
+  title.parent('rightbot-holder');
   b=createP('rouge');
-  b.position(825, 440);
+  b.parent('rightbot-holder');
   rBackground = createSlider(0, 255, 230);
-  rBackground.position(820, 470);
+  rBackground.parent('rightbot-holder');
   b=createP('vert');
-  b.position(825, 485)
+  b.parent('rightbot-holder');
   gBackground = createSlider(0, 255, 150);
-  gBackground.position(820, 515);
+  gBackground.parent('rightbot-holder');
   b=createP('bleu');
-  b.position(825, 530)
+  b.parent('rightbot-holder');
   bBackground = createSlider(0, 255, 150);
-  bBackground.position(820, 560);
+  bBackground.parent('rightbot-holder');
 
 
 
   //BOUTON CRÉER
   btnCreate = createButton('kréer');
-  btnCreate.position(640, 560);
+  btnCreate.parent('leftbot-holder');
   btnCreate.mousePressed(draw);
 
 
 
   //BOUTON SAUVEGARDER
   btnSave = createButton('sauvegarder');
-  btnSave.position(690, 560);
+  btnSave.parent('leftbot-holder');
   btnSave.mousePressed(screenshot);
   
 
