@@ -481,15 +481,6 @@ html {
 		background-color: #f4f4f4;
 	}
 
-	.works_container_text {
-		padding: 0 0 60px 0;
-	}
-
-	.works_container_text_max {
-		margin: 0 auto;
-		max-width: 550px;
-	}
-
 	.works_container_gallery ul {
 		width: 100%
 	}
@@ -667,10 +658,6 @@ html {
 	.works_container {
 		overflow: auto;
 		padding: 100px 10% 90px 10%;
-	}
-
-	.works_container_text {
-		padding: 0 15% 60px 15%;
 	}
 
 	.works_container_gallery li {
