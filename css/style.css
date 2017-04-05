@@ -503,6 +503,10 @@ html {
 		transform: translateY(-6px);
 	}
 
+	.works_container_gallery li:active {
+		transform: scale(0.98);
+	}
+
 	.works_container_gallery li:hover img {
 		opacity: 0.95;
 	}
