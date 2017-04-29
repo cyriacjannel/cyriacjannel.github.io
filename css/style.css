@@ -366,6 +366,7 @@ html {
 		color: #ffffff;
 		text-align:center;
 		background-image: url(../img/cover-hey.jpg);
+		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
 		background-color: #384688;
@@ -551,6 +552,7 @@ html {
 	.contact_container {
 		padding: 80px 8% 80px 8%;
 		background-image: url(../img/cover-contact.jpg);
+		background-attachment: fixed;
 		background-position: center 40%;
 		background-size: cover;
 		background-color: #384688;
