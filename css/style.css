@@ -148,7 +148,7 @@ html {
 		font-family: 'Fira Sans', sans-serif;
 		font-size:	16px;
 		font-weight: 400;
-		line-height: 1.5;
+		line-height: 1.68;
 		color: #737f8d;
 		background: #1c1e21;
 		-webkit-font-smoothing: subpixel-antialiased;
@@ -362,11 +362,9 @@ html {
 	}
 
 	.hey {
-		height: 100%;
+		height: 80%;
 		color: #ffffff;
-		text-align:center;
 		background-image: url(../img/cover-hey.jpg);
-		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
 		background-color: #384688;
@@ -384,13 +382,12 @@ html {
 	.hey_container {
 		display: inline-block;
 		vertical-align: middle;
+		margin: 38px 0 0 8%;
 	}
 
 	.hey_container h4 {	
-		font-size: 86px;
+		font-size: 38px;
 		font-weight: 500;
-		letter-spacing: -2px;
-		text-transform: lowercase;
 		-webkit-animation: 1s ease-in-out 0s 1 normal backwards running pop;
 		-moz-animation: 1s ease-in-out 0s 1 normal backwards running pop;
 		-ms-animation: 1s ease-in-out 0s 1 normal backwards running pop;
@@ -399,7 +396,9 @@ html {
 	}
 
 	.hey_container p {
-		margin: 0 0 80px 0;
+		opacity: 0.6;
+		font-size: 16px;
+		margin: 4px 0 80px 0;
 		-webkit-animation: 0.8s ease-in-out 0.6s 1 normal backwards running pop;
 		-moz-animation: 0.8s ease-in-out 0.6s 1 normal backwards running pop;
 		-ms-animation: 0.8s ease-in-out 0.6s 1 normal backwards running pop;
@@ -552,7 +551,6 @@ html {
 	.contact_container {
 		padding: 80px 8% 80px 8%;
 		background-image: url(../img/cover-contact.jpg);
-		background-attachment: fixed;
 		background-position: center 40%;
 		background-size: cover;
 		background-color: #384688;
@@ -627,9 +625,10 @@ html {
 	}
 
 	.main-header_nav {
-		padding: 0 0 0 12px;
+		padding: 0 12px 0 0;
 		opacity: 1;
 		top: 0;
+		text-align: right;
 		background: transparent;
 		box-shadow: none;
 	}
@@ -650,6 +649,19 @@ html {
 	.main-header_nav.scroll {
 		box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
 		background-color: #2e3136;
+	}
+
+
+	/*------------------------------------*\
+			$HEY
+	\*------------------------------------*/
+
+	.hey {
+		height: 70%;
+	}
+
+	.hey_container {
+		margin: 0 0 0 20%;
 	}
 
 
@@ -716,7 +728,11 @@ html {
 	}
 
 	.hey_container h4 {
-		font-size: 92px;
+		font-size: 46px;
+	}
+
+	.hey_container p {
+		font-size: 20px;
 	}
 
 
@@ -754,7 +770,11 @@ html {
 	}
 
 	.hey_container h4 {
-		font-size: 110px;
+		font-size: 54px;
+	}
+
+	.hey_container p {
+		font-size: 22px;
 	}
 
 
