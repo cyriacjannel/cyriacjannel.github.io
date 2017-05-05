@@ -305,7 +305,7 @@ html {
 	}
 
 	.main-header_nav li {
-		padding: 10px;
+		padding: 10px 6px;
 	}
 
 	.main-header_nav.scroll {
