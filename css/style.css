@@ -118,27 +118,6 @@ html {
 		100% {}
 	}
 
-	@-webkit-keyframes scroll {
-		0% {}
-		100% {transform: translateY(20px);}
-	}
-	@-moz-keyframes scroll {
-		0% {}
-		100% {transform: translateY(20px);}
-	}
-	@-ms-keyframes scroll {
-		0% {}
-		100% {transform: translateY(20px);}
-	}
-	@-o-keyframes scroll {
-		0% {}
-		100% {transform: translateY(20px);}
-	}
-	@keyframes scroll {
-		0% {}
-		100% {transform: translateY(20px);}
-	}
-
 
 	/*------------------------------------*\
 			$GENERAL
@@ -414,25 +393,6 @@ html {
 		animation: 0.6s ease-in-out 0.8s 1 normal backwards running pop;
 	}
 
-	.hey_container_scroll {
-		position: relative;
-		top: 40px;
-		-webkit-animation: 0.4s ease-in-out 1s 1 normal backwards running pop, 1s ease-in-out 0s infinite alternate none scroll;
-		-moz-animation: 0.4s ease-in-out 1s 1 normal backwards running pop, 1s ease-in-out 0s infinite alternate none scroll;
-		-ms-animation: 0.4s ease-in-out 1s 1 normal backwards running pop, 1s ease-in-out 0s infinite alternate none scroll;
-		-o-animation: 0.4s ease-in-out 1s 1 normal backwards running pop, 1s ease-in-out 0s infinite alternate none scroll;
-		animation: 0.4s ease-in-out 1s 1 normal backwards running pop, 1s ease-in-out 0s infinite alternate none scroll;
-		-webkit-transition: 0.2s ease-out;
-		-moz-transition: 0.2s ease-out;
-		-ms-transition: 0.2s ease-out;
-		-o-transition: 0.2s ease-out;
-		transition: 0.2s ease-out;
-	}
-
-	.hey_container_scroll:hover {
-		opacity: 0.6;
-	}
-
 
 	/*------------------------------------*\
 			$ABOUT
@@ -452,6 +412,11 @@ html {
 	.about_container_max {
 		margin: 0 auto;
 		max-width: 980px;
+		-webkit-animation: 0.4s ease-in-out 1s 1 normal backwards running pop;
+		-moz-animation: 0.4s ease-in-out 1s 1 normal backwards running pop;
+		-ms-animation: 0.4s ease-in-out 1s 1 normal backwards running pop;
+		-o-animation: 0.4s ease-in-out 1s 1 normal backwards running pop;
+		animation: 0.4s ease-in-out 1s 1 normal backwards running pop;
 	}
 
 	.about_container_img {
